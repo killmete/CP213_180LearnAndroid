@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">180LearnAndroid</string>
     <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_activity_menu">MainActivity</string>
     <string name="title_activity_list">ListActivity</string>
+    <string name="title_activity_life_cycle_compose">LifeCycleComposeActivity</string>
 </resources>

@@ -13,25 +13,32 @@
         android:theme="@style/Theme._180LearnAndroid"
         tools:targetApi="31">
         <activity
-            android:name=".ListActivity"
+            android:name=".LifeCycleComposeActivity"
             android:exported="false"
-            android:label="@string/title_activity_list"
+            android:label="@string/title_activity_life_cycle_compose"
             android:theme="@style/Theme._180LearnAndroid" />
         <activity
-            android:name=".MainActivity2"
+            android:name=".MenuActivity"
             android:exported="true"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/Theme._180LearnAndroid"></activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:label="@string/app_name"
+            android:label="@string/title_activity_menu"
             android:theme="@style/Theme._180LearnAndroid">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".PokedexActivity"
+            android:exported="false"
+            android:label="@string/title_activity_list"
+            android:theme="@style/Theme._180LearnAndroid" />
+        <activity
+            android:name=".RPGCardActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme._180LearnAndroid">
+
         </activity>
     </application>
 
