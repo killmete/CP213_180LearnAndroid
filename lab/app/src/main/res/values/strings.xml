@@ -4,4 +4,5 @@
     <string name="title_activity_menu">MainActivity</string>
     <string name="title_activity_list">ListActivity</string>
     <string name="title_activity_life_cycle_compose">LifeCycleComposeActivity</string>
+    <string name="title_activity_shared_preferences">SharedPreferencesActivity</string>
 </resources>

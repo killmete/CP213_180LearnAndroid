@@ -37,6 +37,8 @@ class RPGCardActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Log.i("Lifecycle", "MainActivity : onCreate")
+        SharedPreferencesUtil.init(this)
+        SharedPreferencesUtil.saveString("user_name", "Arnut")
         setContent {
             RPGCardView(
                 onNextActivity = {
@@ -77,6 +79,7 @@ class RPGCardActivity : ComponentActivity() {
 
     @Composable
     fun RPGCardView(onNextActivity: () -> Unit) {
+        val name = SharedPreferencesUtil.getString("user_name")
         Column(
             modifier = Modifier
                 .fillMaxSize()
@@ -92,7 +95,7 @@ class RPGCardActivity : ComponentActivity() {
                     .background(color = Color.White)
             ) {
                 Text(
-                    text = "HP",
+                    text = name,
                     modifier = Modifier
                         .align(alignment = Alignment.CenterStart)
                         .fillMaxWidth(fraction = 0.5f)
@@ -110,7 +113,7 @@ class RPGCardActivity : ComponentActivity() {
                     .align(alignment = Alignment.CenterHorizontally)
                     .padding(10.dp)
                     .clickable {
-                        onNextActivity.invoke()
+                        SharedPreferencesUtil.remove("user_name")
                     }
             )
             // Status
