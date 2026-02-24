@@ -49,5 +49,5 @@
             android:label="@string/app_name"
             android:theme="@style/Theme._180LearnAndroid"></activity>
     </application>
-
+    // check in 24 feb 26
 </manifest>
