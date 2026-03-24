@@ -20,6 +20,16 @@ class MenuActivity : ComponentActivity() {
         setContent {
             Column(modifier = Modifier.fillMaxSize().padding(16.dp)) {
                 Button(onClick = {
+                    startActivity(Intent(this@MenuActivity, SensorActivity::class.java))
+                }) {
+                    Text("SensorActivity")
+                }
+                Button(onClick = {
+                    startActivity(Intent(this@MenuActivity, GalleryPermissionActivity::class.java))
+                }) {
+                    Text("GalleryPermissionActivity")
+                }
+                Button(onClick = {
                     startActivity(Intent(this@MenuActivity, RPGCardActivity::class.java))
                 }) {
                     Text("RPGCardActivity")

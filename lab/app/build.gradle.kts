@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -56,13 +57,15 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    implementation(platform("com.google.firebase:firebase-bom:34.11.0"))
+    // Cloud Firestore Library
+    implementation("com.google.firebase:firebase-firestore")
     implementation("io.coil-kt:coil-compose:2.5.0") // Check for the latest version
-
+    implementation("com.google.android.gms:play-services-location:21.2.0")
     // Retrofit สำหรับคุยกับ Server
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     // Converter สำหรับแปลง JSON เป็น Data Class (Gson)
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
-
     // Lifecycle & ViewModel สำหรับ Compose
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.0")
 }

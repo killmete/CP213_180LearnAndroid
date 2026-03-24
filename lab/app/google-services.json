@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "239569805856",
+    "project_id": "myclassroomapp-216ea",
+    "storage_bucket": "myclassroomapp-216ea.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:239569805856:android:e7f834f4a3f65f492cd245",
+        "android_client_info": {
+          "package_name": "com.example.a180learnandroid"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABdVQXHLNzb3sChclGNdsxdGUU8IeUlig"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

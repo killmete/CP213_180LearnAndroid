@@ -5,4 +5,5 @@
     <string name="title_activity_list">ListActivity</string>
     <string name="title_activity_life_cycle_compose">LifeCycleComposeActivity</string>
     <string name="title_activity_shared_preferences">SharedPreferencesActivity</string>
+    <string name="title_activity_counter_screen">CounterScreen</string>
 </resources>
