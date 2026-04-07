@@ -21,6 +21,36 @@
         android:theme="@style/Theme._180LearnAndroid"
         tools:targetApi="31">
         <activity
+            android:name=".Part12Activity"
+            android:exported="false"
+            android:label="Part 12: Dialog and Bottom Sheet"
+            android:theme="@style/Theme._180LearnAndroid" />
+        <activity
+            android:name=".Part11Activity"
+            android:exported="false"
+            android:label="Part 11: Skeleton Loading"
+            android:theme="@style/Theme._180LearnAndroid" />
+        <activity
+            android:name=".Part10Activity"
+            android:exported="false"
+            android:label="Part 10: Glance Widget"
+            android:theme="@style/Theme._180LearnAndroid" />
+        <receiver
+            android:name=".MyGlanceWidgetReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/my_glance_widget_info" />
+        </receiver>
+        <activity
+            android:name=".Part9Activity"
+            android:exported="false"
+            android:label="Part 9: Collapsing"
+            android:theme="@style/Theme._180LearnAndroid" />
+        <activity
             android:name=".Part8Activity"
             android:exported="false"
             android:label="@string/title_activity_part8"

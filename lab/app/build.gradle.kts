@@ -68,4 +68,6 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     // Lifecycle & ViewModel สำหรับ Compose
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.0")
+    // Jetpack Glance สำหรับทำ App Widget
+    implementation("androidx.glance:glance-appwidget:1.1.1")
 }
